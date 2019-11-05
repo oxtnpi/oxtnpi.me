@@ -1,0 +1,94 @@
+.page-body {
+  min-width: 320px;
+  margin: 0;
+  background-color: #fdb0d8;
+  font-family: 'Press Start 2P', cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp .page-body {
+  background-image: url("/images/phone@x1.jpg");
+}
+
+.webp .page-body {
+  background-image: url("/images/phone@x1.webp");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .no-webp .page-body {
+    background-image: url("/images/phone@x2.jpg");
+  }
+  .webp .page-body {
+    background-image: url("/images/phone@x2.webp");
+  }
+}
+
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-nav__list,
+.social__list {
+  width: 320px;
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-nav__link,
+.social__link {
+  text-decoration: none;
+  color: #420078;
+}
+.main-nav__link:hover,
+.social__link:hover {
+  text-decoration: underline;
+}
+
+.main-nav__link:active,
+.social__link:active{
+  color: #ec9adc;
+}
+
+
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-main__about {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__img {
+  width: 192px;
+  height: 192px;
+  border-radius: 100%;
+}
+
+.page-main__title {
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+}
+.main-title {
+  font-size: 27px;
+}
+
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
