@@ -5,10 +5,13 @@ var getRandomInBounds = function (min, max) {
 };
 var titleText = document.querySelectorAll('.page-main__title');
 
-var changeColor = function(random){
-var color = colors[random(0,colors.length - 1)];
-titleText[0].style.color = color;
-titleText[1].style.color = color;
+var changeColor = function (random) {
+  var color = colors[random(0, colors.length - 1)];
+  titleText[0].style.color = color;
+  titleText[1].style.color = color;
 };
 
 changeColor(getRandomInBounds);
+setInterval(function () {
+  changeColor(getRandomInBounds);
+}, 3 * 60 * 100);
