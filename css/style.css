@@ -42,7 +42,7 @@
 
 .main-nav__link,
 .social__link {
-  font-size: 13px;
+  font-size: 10px;
   text-decoration: none;
   color: #420078;
 }
@@ -54,6 +54,7 @@
 .main-nav__link:active,
 .social__link:active{
   color: #ec9adc;
+  text-decoration: none;
 }
 
 
