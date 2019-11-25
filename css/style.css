@@ -24,9 +24,7 @@
   }
 }
 
-.page-header,
-.page-main,
-.page-footer {
+.page-header, .page-main, .page-footer {
   width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -82,7 +80,6 @@
   font-size: 27px;
 }
 
-
 @media (min-width: 660px) {
   html, .page-body {
     height: 100%;
@@ -111,7 +108,7 @@
   .main-nav__link, .social__link {
     font-size: 15px;
   }
-  .page-main{
+  .page-main {
     display: flex;
     flex-grow: 1;
     height: 100%;
@@ -128,12 +125,76 @@
     margin: 0;
     flex-direction: column;
   }
-
   .page-main__title {
     width: 400px;
     padding: 20px 30px;
     padding-bottom: 50px;
-    
+  }
+  .main-title {
+    font-size: 23px;
+    padding: 30px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  html, .page-body {
+    height: 100%;
+  }
+  .page-body, .page-main, .page-main__about, .page-header, .main-nav__list, .social__list, .page-footer {
+    min-width: 1200px;
+  }
+  .page-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .no-webp .page-body {
+    background-image: url("/images/original.jpg");
+  }
+  .webp .page-body {
+    background-image: url("/images/original@x1.webp");
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .no-webp .page-body {
+      background-image: url("/images/original@x2.jpg");
+    }
+    .webp .page-body {
+      background-image: url("/images/original@x2.webp");
+    }
+  }
+  .main-nav__link, .social__link {
+    font-size: 15px;
+  }
+  .page-main {
+    display: flex;
+    height: 100%;
+  }
+  .page-main__about {
+    min-width: 1000px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 0;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .about__picture {
+    display: block;
+    margin: 0 auto;
+    order: 2;
+    padding: 0;
+  }
+  .page-main__container {
+    width: 850px;
+    display: flex;
+    order: 1;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0;
+  }
+  .page-main__title {
+    width: 800px;
+    padding: 20px 30px;
+    padding-bottom: 50px;
   }
   .main-title {
     font-size: 23px;
